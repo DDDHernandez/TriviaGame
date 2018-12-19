@@ -34,7 +34,7 @@ h1 {
     
 }
 
-.hiddenQuestions {
+#hiddenQuestions {
    color: lightseagreen;
    text-align: center;
    display: none;
