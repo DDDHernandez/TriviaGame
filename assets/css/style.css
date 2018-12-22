@@ -34,10 +34,25 @@ h1 {
     
 }
 
-#hiddenQuestions {
+#gameStart {
    color: lightseagreen;
    text-align: center;
    display: none;
 
     
+}
+
+
+P {
+    font-size: 28px;
+}
+.radio-inline {
+    font-size: 20px;
+}
+
+#showNumber {
+    color: limegreen;
+}
+h2{
+    font-size: 60px;
 }

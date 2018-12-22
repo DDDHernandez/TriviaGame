@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" href="reset.css" />
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <title>Trivia Mania</title>
 </head>
 
@@ -22,142 +23,142 @@
         <button type="button" class="btn btn-primary btn-lg">Start</button>
     </div>
      
-
+<div class="row" id="gameStart">
+    <div id="showNumber"></div>
 <div id="hiddenQuestions">
         <p>Name the seventh planet from the sun.</p>
         <form>
-          <label class="checkbox-inline">
-            <input type="checkbox" value="">Jupiter
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" value="">Neptune
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" value="">Uranus
-          </label>
-          <label class="checkbox-inline">
-                <input type="checkbox" value="">Pluto
-              </label>
-        </form>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Jupiter
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Neptune
+                </label>
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" id="yes">Uranus
+                </label>
+                <label class="radio-inline">
+                        <input type="radio" name="optradio">Pluto
+                      </label>  
+            </form>
         <br>
         
         <p>Name the world's largest ocean.</p>
         <form>
-                <label class="checkbox-inline">
-                  <input type="checkbox" value="">Atlantic
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Atlantic
                 </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" value="">Pacific
+                <label class="radio-inline">
+                  <input type="radio" name="optradio" id="yes">Pacific
                 </label>
-                <label class="checkbox-inline">
-                  <input type="checkbox" value="">Arctic
+                <label class="radio-inline">
+                  <input type="radio" name="optradio">Arctic
                 </label>
-                <label class="checkbox-inline">
-                      <input type="checkbox" value="">Indian
-                    </label>
-              </form>
+                <label class="radio-inline">
+                        <input type="radio" name="optradio">Indian
+                      </label>  
+            </form>
               <br>
         
               <p>
              How old is the world's oldest piece of chewing gum?
               </p>
               <form>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" value="">9000 years old
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio" id="yes">9000 years old
                     </label>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" value="">2 weeks old
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">2 weeks old
                     </label>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" value="">8 months old
+                    <label class="radio-inline">
+                      <input type="radio" name="optradio">8 months old
                     </label>
-                    <label class="checkbox-inline">
-                          <input type="checkbox" value="">20 years old
-                        </label>
-                  </form>
-                  <br>
-
+                    <label class="radio-inline">
+                            <input type="radio" name="optradio">20 years old
+                          </label>  
+                </form>
+                    <br>
                   <p>
                        How many pieces of wood does it take to make a violin.
                   </p>
-                 <form>
-                  <label class="checkbox-inline">
-                    <input type="checkbox" value="">20 pieces
-                    </label>
-                    <label class="checkbox-inline">
-                       <input type="checkbox" value="">40 pieces
-                   </label>
-                   <label class="checkbox-inline">
-                        <input type="checkbox" value="">70 pieces
-                    </label>
-                    <label class="checkbox-inline">
-                        <input type="checkbox" value="">100 pieces
-                    </label>
-                </form>
+                  <form>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">20 pieces
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio"> 40 pieces
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio" id="yes">70 pieces
+                        </label>
+                        <label class="radio-inline">
+                                <input type="radio" name="optradio">100 pieces
+                              </label>  
+                    </form>
                 <br>
                 
                 <p>
                   Where was the fortune Cookie invented.
                    </p>
-                  <form>
-                   <label class="checkbox-inline">
-                     <input type="checkbox" value="">China
-                     </label>
-                     <label class="checkbox-inline">
-                        <input type="checkbox" value="">Japan
-                    </label>
-                    <label class="checkbox-inline">
-                         <input type="checkbox" value="">India
-                     </label>
-                     <label class="checkbox-inline">
-                         <input type="checkbox" value="">United States
-                     </label>
-                 </form>
-                 <br>
-                 
+                   <form>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">China
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">Japan
+                        </label>
+                        <label class="radio-inline">
+                          <input type="radio" name="optradio">India
+                        </label>
+                        <label class="radio-inline">
+                                <input type="radio" name="optradio" id="yes">United States
+                              </label>  
+                    </form>
+                    <br>
                  <p>
                         What is a group of frogs known as?
                     </p>
-                   <form>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" value="">Frogmania
-                      </label>
-                      <label class="checkbox-inline">
-                         <input type="checkbox" value="">romp
-                     </label>
-                     <label class="checkbox-inline">
-                          <input type="checkbox" value="">army
-                      </label>
-                      <label class="checkbox-inline">
-                          <input type="checkbox" value="">knot
-                      </label>
-                  </form>
+                    <form>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">Frogmania
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">Roomp
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio" id="yes">Army
+                            </label>
+                            <label class="radio-inline">
+                                    <input type="radio" name="optradio">Knot
+                                  </label>  
+                        </form>
                   <br>
                   
                   <p>
                     When did Gmail launch.
                     </p>
-                   <form>
-                    <label class="checkbox-inline">
-                      <input type="checkbox" value="">April 1st, 2004
-                      </label>
-                      <label class="checkbox-inline">
-                         <input type="checkbox" value="">March 10th, 1999
-                     </label>
-                     <label class="checkbox-inline">
-                          <input type="checkbox" value="">December 12, 2018
-                      </label>
-                      <label class="checkbox-inline">
-                          <input type="checkbox" value="">August 4th, 2008
-                      </label>
-                  </form>
+                    <form>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio" id="yes">April 1st, 2004
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">March 10th, 1999
+                            </label>
+                            <label class="radio-inline">
+                              <input type="radio" name="optradio">Decemer 12th, 2018
+                            </label>
+                            <label class="radio-inline">
+                                    <input type="radio" name="optradio">August 4th, 2008
+                                  </label>  
+                        </form>                
                   <br>
                   <br>
  
 
  
 
-                </div>                  
+                </div>   
+                </div>               
       </div>
 </div>
     
