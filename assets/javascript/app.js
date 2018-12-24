@@ -10,7 +10,6 @@ $(document).ready(function() {
             run();
         });
      
-
             function run() {
                 clearInterval(intervalId);
                 intervalId = setInterval(decrement, 1000);
@@ -18,26 +17,30 @@ $(document).ready(function() {
               function decrement() {
                 number--;
                 $("#showNumber").html("<h2>" + number + "</h2>");  
-                };
                    
                 if (number === 0) {
-                    stop();
-                    alert("Time Up!");
-                    Answers();
-                    $("#hiddenQuestions").html("Congratulations you got " + correct + " out of 5 correct!\nRefresh the page to play again!" )
-                } else {
-                    showQuestion();
-                    run();
+                stop();
+                alert("Time Up!");
+                 console.log("Time up!");
+                 
                 }
-                function stop() {
+            } 
+              function stop() {
                     clearInterval(intervalId);
-                  }
-                  var correct = 0;
+                    Answers();
+
+              
+                 var correct = 0;
                
-            function Answers() {
-                if ("#yes" == checked){
-                    correct++;}
-                
+              function Answers() {
+             if ($('#yes').attr('checked') === 'checked') {
+                  correct++;
+                  $("#gameStart").css("display", "none");   
+              $("#results").html("Congratulations you got " + correct + " out of 7 correct!\nRefresh the page to play again!" )
+                console.log(correct)
             }
+        }; 
+        }
+    });
            
-})
+
