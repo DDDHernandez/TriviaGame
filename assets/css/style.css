@@ -1,7 +1,9 @@
 body {
-    background: url(../images/skybackground.jpg) repeat;
+    background: url(../images/crossline-dots.png) repeat;
 }
-
+.jumbotron{
+    background: url(../images/crossline-dots.png) repeat;
+}
 .container {
     max-width: 900px;
     background-color: darkslategray;
@@ -11,48 +13,44 @@ body {
     align-content: center;
 
 }
-
-.row {
-    text-align: center;
+#startButton{
+    display: flex;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
 }
-
 h1 {
     text-align: center;
     font-size: 44px;
     font-display: georgia, serif; 
     color: whitesmoke; 
 }
-
-.btn {
+h3{
+    color: whitesmoke;
+    font-size: 22px;
+}
+p{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.row {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#game-view {
+    width: 22rem;
+    background-color: #006666;
     text-align: center;
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    
-}
-
-#gameStart {
-   color: lightseagreen;
-   text-align: center;
-   display: none;
 
     
 }
 
 
-P {
-    font-size: 28px;
-}
-.radio-inline {
-    font-size: 20px;
-}
 
-#showNumber {
-    color: limegreen;
-}
-h2{
-    font-size: 60px;
+#Stopwatch {
+    color: whitesmoke;
 }

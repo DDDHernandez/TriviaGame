@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html >
+<html>
 
 <head>
   <meta charset="utf-8">
@@ -10,160 +10,50 @@
   <title>Trivia Mania</title>
 </head>
 
-<body>
- <div class="container">
-     <div class="row">
-        <div> 
-        <h1>Trivia Mania</h1>
-    </div> 
-    </div>
-    <br>
-    <br>
-    <div class="row" id="Start-button">
-        <button type="button" id="Start" class="btn btn-primary btn-lg">Start</button>
-    </div>
-     
-<div class="row" id="gameStart">
-    <div id="showNumber"></div>
-<div id="hiddenQuestions">
-        <p>Name the seventh planet from the sun.</p>
-        <form class="forms">
-                <label class="radio-inline">
-                  <input type="radio" checked="checked" name="optradio">Jupiter
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" checked="checked" name="optradio">Neptune
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" checked="checked"  name="optradio" id="yes">Uranus
-                </label>
-                <label class="radio-inline">
-                        <input type="radio" checked="checked"  name="optradio">Pluto
-                      </label>  
-            </form>
+
+
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4 d-flex justify-content-center">Trivia Mania</h1>
         <br>
-        
-        <p>Name the world's largest ocean.</p>
-        <form class="forms">
-                <label class="radio-inline">
-                  <input type="radio" data-attribute="checked"  name="optradio">Atlantic
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" data-attribute="checked" name="optradio" id="yes">Pacific
-                </label>
-                <label class="radio-inline">
-                  <input type="radio" data-attribute="checked"  name="optradio">Arctic
-                </label>
-                <label class="radio-inline">
-                        <input type="radio" data-attribute="checked"  name="optradio">Indian
-                      </label>  
-            </form>
-              <br>
-        
-              <p>
-             How old is the world's oldest piece of chewing gum?
-              </p>
-              <form class="forms">
-                    <label class="radio-inline">
-                      <input type="radio" data-attribute="checked"  name="optradio" class="yes">9000 years old
-                    </label>
-                    <label class="radio-inline">
-                      <input type="radio" data-attribute="checked"  name="optradio">2 weeks old
-                    </label>
-                    <label class="radio-inline">
-                      <input type="radio"data-attribute="checked"  name="optradio">8 months old
-                    </label>
-                    <label class="radio-inline">
-                            <input type="radio"data-attribute="checked"  name="optradio">20 years old
-                          </label>  
-                </form>
-                    <br>
-                  <p>
-                       How many pieces of wood does it take to make a violin.
-                  </p>
-                  <form class="forms">
-                        <label class="radio-inline">
-                          <input type="radio" name="optradio">20 pieces
-                        </label>
-                        <label class="radio-inline">
-                          <input type="radio" name="optradio"> 40 pieces
-                        </label>
-                        <label class="radio-inline">
-                          <input type="radio" name="optradio" class="yes">70 pieces
-                        </label>
-                        <label class="radio-inline">
-                                <input type="radio" name="optradio">100 pieces
-                              </label>  
-                    </form>
-                <br>
-                
-                <p>
-                  Where was the fortune Cookie invented.
-                   </p>
-                   <form class="forms">
-                        <label class="radio-inline">
-                          <input type="radio" name="optradio">China
-                        </label>
-                        <label class="radio-inline">
-                          <input type="radio" name="optradio">Japan
-                        </label>
-                        <label class="radio-inline">
-                          <input type="radio" name="optradio">India
-                        </label>
-                        <label class="radio-inline">
-                                <input type="radio" name="optradio" class="yes">United States
-                              </label>  
-                    </form>
-                    <br>
-                 <p>
-                        What is a group of frogs known as?
-                    </p>
-                    <form class="forms">
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio">Frogmania
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio">Roomp
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio" class="yes">Army
-                            </label>
-                            <label class="radio-inline">
-                                    <input type="radio" name="optradio">Knot
-                                  </label>  
-                        </form>
-                  <br>
-                  
-                  <p>
-                    When did Gmail launch.
-                    </p>
-                    <form class="forms">
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio" class="yes">April 1st, 2004
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio">March 10th, 1999
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="optradio">Decemer 12th, 2018
-                            </label>
-                            <label class="radio-inline">
-                                    <input type="radio" name="optradio">August 4th, 2008
-                                  </label>  
-                        </form>                
-                
-
- 
-
-                </div>   
-                </div> 
-                <br>
-                <div class="row" id="results"></div>
-                <br>              
+        <p class="display-8 d-flex justify-content-center">Answer as many questions as you can to the best of your
+          knowledge!</p>
+          <button type="button" class="btn btn-primary" id="startButton">Start</button>
       </div>
-</div>
+    </div>
+    <div id="gameStart" style="display: none">
+    <div class="row">
+        <div class=" col-md-4">
+      <div class="card d-flex justify-content-center" id="game-view">
+        <div class="card-body">
+          <h3 class="card-title">Question:</h3>
+          <br>
+          <h3 class="card-text" id="question-view"></h3>
+          <Br>
+          <div class="btn-toolbar mb-3 justify-content-center" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group-vertical btn-block" role="group" aria-label="First group">
+              <button type="button" class="btn btn-secondary" id="button1"></button>
+              <button type="button" class="btn btn-secondary" id="button2"></button>
+              <button type="button" class="btn btn-secondary" id="button3"></button>
+              <button type="button" class="btn btn-secondary" id="button4"></button>
+            </div>
+          </div>
+          <br>
+          <h3 id="Stopwatch">
+            </h3>
+            <br>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+    <br>
+    <br>
     
-<script type="text/javascript" src="assets/javascript/app.js"></script>
 
-</body>
-</html>    
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+
+  </body>
+
+</html>
