@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 
 <head>
   <meta charset="utf-8">
@@ -20,14 +20,14 @@
     <br>
     <br>
     <div class="row" id="Start-button">
-        <button type="button" class="btn btn-primary btn-lg">Start</button>
+        <button type="button" id="Start" class="btn btn-primary btn-lg">Start</button>
     </div>
      
 <div class="row" id="gameStart">
     <div id="showNumber"></div>
 <div id="hiddenQuestions">
         <p>Name the seventh planet from the sun.</p>
-        <form>
+        <form class="forms">
                 <label class="radio-inline">
                   <input type="radio" checked="checked" name="optradio">Jupiter
                 </label>
@@ -44,7 +44,7 @@
         <br>
         
         <p>Name the world's largest ocean.</p>
-        <form>
+        <form class="forms">
                 <label class="radio-inline">
                   <input type="radio" data-attribute="checked"  name="optradio">Atlantic
                 </label>
@@ -63,9 +63,9 @@
               <p>
              How old is the world's oldest piece of chewing gum?
               </p>
-              <form>
+              <form class="forms">
                     <label class="radio-inline">
-                      <input type="radio" data-attribute="checked"  name="optradio" id="yes">9000 years old
+                      <input type="radio" data-attribute="checked"  name="optradio" class="yes">9000 years old
                     </label>
                     <label class="radio-inline">
                       <input type="radio" data-attribute="checked"  name="optradio">2 weeks old
@@ -81,7 +81,7 @@
                   <p>
                        How many pieces of wood does it take to make a violin.
                   </p>
-                  <form>
+                  <form class="forms">
                         <label class="radio-inline">
                           <input type="radio" name="optradio">20 pieces
                         </label>
@@ -89,7 +89,7 @@
                           <input type="radio" name="optradio"> 40 pieces
                         </label>
                         <label class="radio-inline">
-                          <input type="radio" name="optradio" id="yes">70 pieces
+                          <input type="radio" name="optradio" class="yes">70 pieces
                         </label>
                         <label class="radio-inline">
                                 <input type="radio" name="optradio">100 pieces
@@ -100,7 +100,7 @@
                 <p>
                   Where was the fortune Cookie invented.
                    </p>
-                   <form>
+                   <form class="forms">
                         <label class="radio-inline">
                           <input type="radio" name="optradio">China
                         </label>
@@ -111,14 +111,14 @@
                           <input type="radio" name="optradio">India
                         </label>
                         <label class="radio-inline">
-                                <input type="radio" name="optradio" id="yes">United States
+                                <input type="radio" name="optradio" class="yes">United States
                               </label>  
                     </form>
                     <br>
                  <p>
                         What is a group of frogs known as?
                     </p>
-                    <form>
+                    <form class="forms">
                             <label class="radio-inline">
                               <input type="radio" name="optradio">Frogmania
                             </label>
@@ -126,7 +126,7 @@
                               <input type="radio" name="optradio">Roomp
                             </label>
                             <label class="radio-inline">
-                              <input type="radio" name="optradio" id="yes">Army
+                              <input type="radio" name="optradio" class="yes">Army
                             </label>
                             <label class="radio-inline">
                                     <input type="radio" name="optradio">Knot
@@ -137,9 +137,9 @@
                   <p>
                     When did Gmail launch.
                     </p>
-                    <form>
+                    <form class="forms">
                             <label class="radio-inline">
-                              <input type="radio" name="optradio" id="yes">April 1st, 2004
+                              <input type="radio" name="optradio" class="yes">April 1st, 2004
                             </label>
                             <label class="radio-inline">
                               <input type="radio" name="optradio">March 10th, 1999
@@ -151,15 +151,15 @@
                                     <input type="radio" name="optradio">August 4th, 2008
                                   </label>  
                         </form>                
-                  <br>
-                  <div class="row" id="results"></div>
-                  <br>
- 
+                
 
  
 
                 </div>   
-                </div>               
+                </div> 
+                <br>
+                <div class="row" id="results"></div>
+                <br>              
       </div>
 </div>
     
